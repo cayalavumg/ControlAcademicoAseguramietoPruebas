@@ -1,36 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="6" assertions="7" errors="1" warnings="0" failures="2" skipped="0" time="0.305868">
-    <testsuite name="Test suite" tests="6" assertions="7" errors="1" warnings="0" failures="2" skipped="0" time="0.305868">
-      <testsuite name="DatabaseTest" file="C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DatabaseTest.php" tests="3" assertions="4" errors="1" warnings="0" failures="0" skipped="0" time="0.300480">
-        <testcase name="testGetInstance" class="DatabaseTest" classname="DatabaseTest" file="C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DatabaseTest.php" line="4" assertions="3" time="0.100114"/>
-        <testcase name="testGetConnection" class="DatabaseTest" classname="DatabaseTest" file="C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DatabaseTest.php" line="13" assertions="1" time="0.000111"/>
-        <testcase name="testConnectionError" class="DatabaseTest" classname="DatabaseTest" file="C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DatabaseTest.php" line="20" assertions="0" time="0.200256">
-          <error type="PHPUnit\Framework\MockObject\MethodCannotBeConfiguredException">DatabaseTest::testConnectionError
-PHPUnit\Framework\MockObject\MethodCannotBeConfiguredException: Trying to configure method "__construct" which cannot be configured because it does not exist, has not been specified, is final, or is static
+  <testsuite name="" tests="3" assertions="1" errors="2" warnings="0" failures="1" skipped="0" time="0.149191">
+    <testsuite name="Test suite" tests="3" assertions="1" errors="2" warnings="0" failures="1" skipped="0" time="0.149191">
+      <testsuite name="DatabaseTest" file="C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DatabaseTest.php" tests="3" assertions="1" errors="2" warnings="0" failures="1" skipped="0" time="0.149191">
+        <testcase name="testGetInstance" class="DatabaseTest" classname="DatabaseTest" file="C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DatabaseTest.php" line="4" assertions="0" time="0.038281">
+          <error type="Error">DatabaseTest::testGetInstance
+Error: Class 'Database' not found
 
-C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DatabaseTest.php:27
+C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DatabaseTest.php:5
 phpvfscomposer://C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\vendor\phpunit\phpunit\phpunit:106</error>
         </testcase>
-      </testsuite>
-      <testsuite name="DbFunctionTest" file="C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DbFunctionTest.php" tests="3" assertions="3" errors="0" warnings="0" failures="2" skipped="0" time="0.005388">
-        <testcase name="testLoginSuccess" class="DbFunctionTest" classname="DbFunctionTest" file="C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DbFunctionTest.php" line="7" assertions="1" time="0.004403">
-          <failure type="PHPUnit\Framework\ExpectationFailedException">DbFunctionTest::testLoginSuccess
-Failed asserting that null is true.
+        <testcase name="testGetConnection" class="DatabaseTest" classname="DatabaseTest" file="C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DatabaseTest.php" line="13" assertions="0" time="0.000128">
+          <error type="Error">DatabaseTest::testGetConnection
+Error: Class 'Database' not found
 
-C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DbFunctionTest.php:11
-phpvfscomposer://C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\vendor\phpunit\phpunit\phpunit:106</failure>
-          <system-out>&lt;script&gt;alert('Either LoginId or Password is Missing')&lt;/script&gt;</system-out>
+C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DatabaseTest.php:14
+phpvfscomposer://C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\vendor\phpunit\phpunit\phpunit:106</error>
         </testcase>
-        <testcase name="testLoginFailure" class="DbFunctionTest" classname="DbFunctionTest" file="C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DbFunctionTest.php" line="15" assertions="1" time="0.000442">
-          <failure type="PHPUnit\Framework\ExpectationFailedException">DbFunctionTest::testLoginFailure
-Failed asserting that null is false.
+        <testcase name="testConnectionError" class="DatabaseTest" classname="DatabaseTest" file="C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DatabaseTest.php" line="20" assertions="1" time="0.110783">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">DatabaseTest::testConnectionError
+Failed asserting that exception of type "Error" matches expected exception "Exception". Message was: "Call to undefined method Mock_Database_591c6516::getConnection()" at
+C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DatabaseTest.php:31
+phpvfscomposer://C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\vendor\phpunit\phpunit\phpunit:106
+.
 
-C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DbFunctionTest.php:19
 phpvfscomposer://C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\vendor\phpunit\phpunit\phpunit:106</failure>
-          <system-out>&lt;script&gt;alert('Either LoginId or Password is Missing')&lt;/script&gt;</system-out>
         </testcase>
-        <testcase name="testCreateCourse" class="DbFunctionTest" classname="DbFunctionTest" file="C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DbFunctionTest.php" line="23" assertions="1" time="0.000542"/>
       </testsuite>
     </testsuite>
   </testsuite>
