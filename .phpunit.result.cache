@@ -1,1 +1,1 @@
-{"version":1,"defects":{"DbFunctionTest::testLoginSuccess":3,"DbFunctionTest::testLoginFailure":3},"times":{"DbFunctionTest::testLoginSuccess":0.015,"DbFunctionTest::testLoginFailure":0.001,"DbFunctionTest::testCreateCourse":0.001}}
+{"version":1,"defects":{"DbFunctionTest::testLoginSuccess":3,"DbFunctionTest::testLoginFailure":3},"times":{"DbFunctionTest::testLoginSuccess":0.014,"DbFunctionTest::testLoginFailure":0,"DbFunctionTest::testCreateCourse":0.001}}
