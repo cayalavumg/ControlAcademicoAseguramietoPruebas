@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="" tests="3" assertions="3" errors="0" warnings="0" failures="2" skipped="0" time="0.015870">
+    <testsuite name="Test suite" tests="3" assertions="3" errors="0" warnings="0" failures="2" skipped="0" time="0.015870">
+      <testsuite name="DbFunctionTest" file="C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DbFunctionTest.php" tests="3" assertions="3" errors="0" warnings="0" failures="2" skipped="0" time="0.015870">
+        <testcase name="testLoginSuccess" class="DbFunctionTest" classname="DbFunctionTest" file="C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DbFunctionTest.php" line="7" assertions="1" time="0.014530">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">DbFunctionTest::testLoginSuccess
+Failed asserting that null is true.
+
+C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DbFunctionTest.php:11
+phpvfscomposer://C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\vendor\phpunit\phpunit\phpunit:106</failure>
+          <system-out>&lt;script&gt;alert('Either LoginId or Password is Missing')&lt;/script&gt;</system-out>
+        </testcase>
+        <testcase name="testLoginFailure" class="DbFunctionTest" classname="DbFunctionTest" file="C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DbFunctionTest.php" line="15" assertions="1" time="0.000517">
+          <failure type="PHPUnit\Framework\ExpectationFailedException">DbFunctionTest::testLoginFailure
+Failed asserting that null is false.
+
+C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DbFunctionTest.php:19
+phpvfscomposer://C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\vendor\phpunit\phpunit\phpunit:106</failure>
+          <system-out>&lt;script&gt;alert('Either LoginId or Password is Missing')&lt;/script&gt;</system-out>
+        </testcase>
+        <testcase name="testCreateCourse" class="DbFunctionTest" classname="DbFunctionTest" file="C:\localhost\htdocs\ControlAcademicoAseguramietoPruebas\tests\DbFunctionTest.php" line="23" assertions="1" time="0.000823"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testsuites>
